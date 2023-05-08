@@ -1,0 +1,32 @@
+--Create a online clothing store database
+
+
+CREATE TABLE betteryoushop (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, smallsize INTEGER, mediumsize INTEGER, largesize INTEGER);
+
+
+INSERT INTO betteryoushop VALUES (1, "LoveYourself Hoodie", 50, 10, 10, 10);
+INSERT INTO betteryoushop VALUES (2, "MentalHealthDay Shirt", 25, 10, 10, 10);
+INSERT INTO betteryoushop VALUES (3, "MentalHealthMatters Hoodie", 50, 10, 10, 10);
+INSERT INTO betteryoushop VALUES (4, "Liveabetterlife Hoodie", 50, 10, 10, 10)
+;
+INSERT INTO betteryoushop VALUES (5, "StayKind Sticker", 8, 20, 0, 0);
+INSERT INTO betteryoushop VALUES (6, "PeaceOutGirlScout Headband", 25, 10, 10, 10);
+INSERT INTO betteryoushop VALUES (7, "You Matter To Me Hoodie", 50, 10, 10, 10);
+INSERT INTO betteryoushop VALUES (8, "I Am Trying Hoodie", 50, 10, 10, 10);
+INSERT INTO betteryoushop VALUES (9, "You Do You Boo Hat", 15, 10, 10, 10);
+INSERT INTO betteryoushop VALUES (10, "Mental Health Water Bottle Sticker", 5, 50, 0, 0);
+INSERT INTO betteryoushop VALUES (11, "You Got This Sticker", 5, 35, 0, 0);
+INSERT INTO betteryoushop VALUES (12, "The Best Has Yet To Come Hoodie", 50, 10, 10, 10);
+INSERT INTO betteryoushop VALUES (13, "My story is just beginning hat", 25, 10, 10, 10);
+INSERT INTO betteryoushop VALUES (14, "one day at a time sticker", 5, 35, 10, 10);
+INSERT INTO betteryoushop VALUES (15, "StayHumble Shirt", 18, 10, 10, 10);
+
+SELECT * FROM betteryoushop;
+
+--display the database ordered by price. 
+SELECT * FROM betteryoushop WHERE price ORDER BY price;
+
+--what is the total sum of items in the store? 
+SELECT SUM(smallsize + mediumsize + largesize) FROM betteryoushop;
+
+
